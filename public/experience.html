@@ -354,6 +354,28 @@ body {
     border-radius:16px;
     margin-bottom:20px;
 }
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        margin-top:10px;
+    }
+
+    .nav-links a{
+        margin:5px 10px 0 0;
+    }
+}
 </style>
 
 </head>
@@ -364,10 +386,11 @@ body {
 
 <div class="navbar">
     <h2>Nabila</h2>
-    <div>
+
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="experience.html" class="active">Experience</a>
+        <a href="experience.html">Experience</a>
         <a href="certificates.html">Certificates</a>
         <a href="contact.html">Contact</a>
     </div>

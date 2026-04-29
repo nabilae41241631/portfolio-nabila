@@ -314,6 +314,28 @@ p{
 .navbar a.active::after{
     width:100%;
 }
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        margin-top:10px;
+    }
+
+    .nav-links a{
+        margin:5px 10px 0 0;
+    }
+}
 </style>
 
 </head>
@@ -324,8 +346,9 @@ p{
 
 <div class="navbar">
     <h2>Nabila</h2>
+
     <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="experience.html">Experience</a>
         <a href="certificates.html">Certificates</a>
