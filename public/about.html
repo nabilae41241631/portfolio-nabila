@@ -323,18 +323,32 @@ p{
 /* MOBILE */
 @media(max-width:768px){
     .navbar{
-        flex-direction:column;
-        align-items:flex-start;
-    }
+    flex-wrap:nowrap;
+}
 
-    .nav-links{
-        flex-wrap:wrap;
-        margin-top:10px;
-    }
+.nav-links a{
+    flex:0 0 auto;
+}
 
-    .nav-links a{
+.nav-links a{
         margin:5px 10px 0 0;
     }
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none; /* Firefox */
+}
+
+.nav-links::-webkit-scrollbar{
+    display:none; /* Chrome */
+}
+
+.nav-links{
+    padding-bottom:5px;
 }
 </style>
 
